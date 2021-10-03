@@ -19,6 +19,8 @@
 		ADA425F3270A14F4001D301A /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F2270A14F4001D301A /* Github.swift */; };
 		ADA425F5270A2645001D301A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F4270A2645001D301A /* UserListView.swift */; };
 		ADA425F7270A2676001D301A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F6270A2676001D301A /* ProfileView.swift */; };
+		ADA425FB270A77D2001D301A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FA270A77D2001D301A /* UserListViewModel.swift */; };
+		ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FC270A78E7001D301A /* SubscriptionToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		ADA425F2270A14F4001D301A /* Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
 		ADA425F4270A2645001D301A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		ADA425F6270A2676001D301A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		ADA425FA270A77D2001D301A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		ADA425FC270A78E7001D301A /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				ADA425CC2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift */,
 				ADA425EB270A037B001D301A /* View */,
 				ADA425EC270A038B001D301A /* Model */,
+				ADA425F9270A77B9001D301A /* ViewModel */,
 				ADA425F1270A14AF001D301A /* Service */,
 				ADA425D02709E1C1001D301A /* Assets.xcassets */,
 				ADA425D52709E1C1001D301A /* Info.plist */,
@@ -110,8 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				ADA425F2270A14F4001D301A /* Github.swift */,
+				ADA425FC270A78E7001D301A /* SubscriptionToken.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		ADA425F9270A77B9001D301A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADA425FA270A77D2001D301A /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */,
+				ADA425FB270A77D2001D301A /* UserListViewModel.swift in Sources */,
 				ADA425F5270A2645001D301A /* UserListView.swift in Sources */,
+				ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */,
 				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
 				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,

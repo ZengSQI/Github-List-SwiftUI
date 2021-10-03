@@ -10,23 +10,26 @@ import Kingfisher
 
 struct UserListView: View {
 
-    var users: [User] = [
-        User(login: "login_name_A", id: 1, avatarURL: URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4")!, type: "User"),
-        User(login: "login_name_B", id: 2, avatarURL: URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4")!, type: "User"),
-        User(login: "login_name_C", id: 3, avatarURL: URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4")!, type: "User"),
-        User(login: "login_name_D", id: 4, avatarURL: URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4")!, type: "User"),
-    ]
+    @StateObject var viewModel: UserListViewModel = UserListViewModel()
 
     var body: some View {
         List {
-            ForEach (users) { user in
+            ForEach (viewModel.users) { user in
                 UserCell(
                     avatarURL: user.avatarURL,
                     userLogin: user.login,
                     userType: user.type
-                )
+                ).onAppear(perform: {
+                    if viewModel.users.last == user {
+                        viewModel.fetchNextPage(user: user)
+                    }
+                })
             }
-        }
+        }.onAppear(perform: {
+            if viewModel.users.isEmpty {
+                viewModel.fetchNextPage(user: nil)
+            }
+        })
     }
 }
 
