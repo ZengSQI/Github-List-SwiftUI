@@ -14,6 +14,8 @@
 		ADA425E52709E44C001D301A /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E42709E44C001D301A /* CombineMoya */; };
 		ADA425E72709E44C001D301A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E62709E44C001D301A /* Moya */; };
 		ADA425EA2709E461001D301A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E92709E461001D301A /* Kingfisher */; };
+		ADA425EE270A07A4001D301A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425ED270A07A4001D301A /* User.swift */; };
+		ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425EF270A07C0001D301A /* UserDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		ADA425D02709E1C1001D301A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA425D32709E1C1001D301A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADA425D52709E1C1001D301A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA425ED270A07A4001D301A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ADA425EF270A07C0001D301A /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				ADA425CC2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift */,
-				ADA425CE2709E1BE001D301A /* ContentView.swift */,
+				ADA425EB270A037B001D301A /* View */,
+				ADA425EC270A038B001D301A /* Model */,
 				ADA425D02709E1C1001D301A /* Assets.xcassets */,
 				ADA425D52709E1C1001D301A /* Info.plist */,
 				ADA425D22709E1C1001D301A /* Preview Content */,
@@ -73,6 +78,23 @@
 				ADA425D32709E1C1001D301A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADA425EB270A037B001D301A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADA425CE2709E1BE001D301A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADA425EC270A038B001D301A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADA425ED270A07A4001D301A /* User.swift */,
+				ADA425EF270A07C0001D301A /* UserDetail.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */,
+				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,
+				ADA425EE270A07A4001D301A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
