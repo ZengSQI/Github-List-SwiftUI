@@ -16,6 +16,7 @@
 		ADA425EA2709E461001D301A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E92709E461001D301A /* Kingfisher */; };
 		ADA425EE270A07A4001D301A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425ED270A07A4001D301A /* User.swift */; };
 		ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425EF270A07C0001D301A /* UserDetail.swift */; };
+		ADA425F3270A14F4001D301A /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F2270A14F4001D301A /* Github.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		ADA425D52709E1C1001D301A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA425ED270A07A4001D301A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA425EF270A07C0001D301A /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		ADA425F2270A14F4001D301A /* Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				ADA425CC2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift */,
 				ADA425EB270A037B001D301A /* View */,
 				ADA425EC270A038B001D301A /* Model */,
+				ADA425F1270A14AF001D301A /* Service */,
 				ADA425D02709E1C1001D301A /* Assets.xcassets */,
 				ADA425D52709E1C1001D301A /* Info.plist */,
 				ADA425D22709E1C1001D301A /* Preview Content */,
@@ -95,6 +98,14 @@
 				ADA425EF270A07C0001D301A /* UserDetail.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ADA425F1270A14AF001D301A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADA425F2270A14F4001D301A /* Github.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			files = (
 				ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */,
 				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
+				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,
 				ADA425EE270A07A4001D301A /* User.swift in Sources */,
 			);
