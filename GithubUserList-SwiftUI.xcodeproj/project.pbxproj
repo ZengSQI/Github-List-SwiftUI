@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425CE2709E1BE001D301A /* ContentView.swift */; };
 		ADA425D12709E1C1001D301A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA425D02709E1C1001D301A /* Assets.xcassets */; };
 		ADA425D42709E1C1001D301A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA425D32709E1C1001D301A /* Preview Assets.xcassets */; };
+		ADA425E52709E44C001D301A /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E42709E44C001D301A /* CombineMoya */; };
+		ADA425E72709E44C001D301A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E62709E44C001D301A /* Moya */; };
+		ADA425EA2709E461001D301A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ADA425E92709E461001D301A /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA425EA2709E461001D301A /* Kingfisher in Frameworks */,
+				ADA425E72709E44C001D301A /* Moya in Frameworks */,
+				ADA425E52709E44C001D301A /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,11 @@
 			dependencies = (
 			);
 			name = "GithubUserList-SwiftUI";
+			packageProductDependencies = (
+				ADA425E42709E44C001D301A /* CombineMoya */,
+				ADA425E62709E44C001D301A /* Moya */,
+				ADA425E92709E461001D301A /* Kingfisher */,
+			);
 			productName = "GithubUserList-SwiftUI";
 			productReference = ADA425C92709E1BE001D301A /* GithubUserList-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,10 @@
 				Base,
 			);
 			mainGroup = ADA425C02709E1BD001D301A;
+			packageReferences = (
+				ADA425E32709E44C001D301A /* XCRemoteSwiftPackageReference "Moya" */,
+				ADA425E82709E461001D301A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = ADA425CA2709E1BE001D301A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +343,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA425E32709E44C001D301A /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		ADA425E82709E461001D301A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA425E42709E44C001D301A /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA425E32709E44C001D301A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		ADA425E62709E44C001D301A /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA425E32709E44C001D301A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		ADA425E92709E461001D301A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA425E82709E461001D301A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADA425C12709E1BE001D301A /* Project object */;
 }
