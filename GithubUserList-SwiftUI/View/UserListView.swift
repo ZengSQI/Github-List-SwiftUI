@@ -15,15 +15,19 @@ struct UserListView: View {
     var body: some View {
         List {
             ForEach (viewModel.users) { user in
-                UserCell(
-                    avatarURL: user.avatarURL,
-                    userLogin: user.login,
-                    userType: user.type
-                ).onAppear(perform: {
-                    if viewModel.users.last == user {
-                        viewModel.fetchNextPage(user: user)
-                    }
-                })
+                NavigationLink(
+                    destination: UserDetailView(),
+                    label: {
+                        UserCell(
+                            avatarURL: user.avatarURL,
+                            userLogin: user.login,
+                            userType: user.type
+                        ).onAppear(perform: {
+                            if viewModel.users.last == user {
+                                viewModel.fetchNextPage(user: user)
+                            }
+                        })
+                    })
             }
         }.onAppear(perform: {
             if viewModel.users.isEmpty {

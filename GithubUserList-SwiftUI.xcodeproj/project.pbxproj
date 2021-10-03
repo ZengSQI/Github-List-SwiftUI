@@ -21,6 +21,7 @@
 		ADA425F7270A2676001D301A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F6270A2676001D301A /* ProfileView.swift */; };
 		ADA425FB270A77D2001D301A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FA270A77D2001D301A /* UserListViewModel.swift */; };
 		ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FC270A78E7001D301A /* SubscriptionToken.swift */; };
+		ADA425FF270A880B001D301A /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FE270A880B001D301A /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ADA425F6270A2676001D301A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ADA425FA270A77D2001D301A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		ADA425FC270A78E7001D301A /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
+		ADA425FE270A880B001D301A /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				ADA425CE2709E1BE001D301A /* ContentView.swift */,
 				ADA425F4270A2645001D301A /* UserListView.swift */,
 				ADA425F6270A2676001D301A /* ProfileView.swift */,
+				ADA425FE270A880B001D301A /* UserDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,
 				ADA425F7270A2676001D301A /* ProfileView.swift in Sources */,
+				ADA425FF270A880B001D301A /* UserDetailView.swift in Sources */,
 				ADA425EE270A07A4001D301A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
