@@ -6,10 +6,56 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            ZStack(alignment: .bottomLeading) {
+                VStack {
+                    Rectangle()
+                        .foregroundColor(.blue)
+                        .frame(height: 300)
+                    Spacer()
+                }
+                KFImage(URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4"))
+                    .resizable()
+                    .background(Color.white)
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                    .padding(.leading, 20)
+            }.frame(height: 350)
+            HStack {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Name")
+                        .font(.title)
+                    Text("login")
+                        .foregroundColor(.gray)
+                        .font(.caption)
+                    HStack(spacing: 4) {
+                        Image(systemName: "person.2.square.stack.fill")
+                        Text("2")
+                            .font(.caption)
+                        Text("followers・")
+                            .foregroundColor(.gray)
+                            .font(.caption)
+                        Text("1")
+                            .font(.caption)
+                        Text("followering・")
+                            .foregroundColor(.gray)
+                            .font(.caption)
+
+                    }
+                    HStack(spacing: 4) {
+                        Image(systemName: "envelope.fill")
+                        Text("email")
+                            .font(.caption)
+                    }
+                }
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            .padding(.horizontal, 32)
+        }
     }
 }
 
