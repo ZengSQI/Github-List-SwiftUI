@@ -23,6 +23,7 @@
 		ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FC270A78E7001D301A /* SubscriptionToken.swift */; };
 		ADA425FF270A880B001D301A /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FE270A880B001D301A /* UserDetailView.swift */; };
 		ADA42601270A8EBA001D301A /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */; };
+		ADA42603270AA405001D301A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42602270AA405001D301A /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		ADA425FC270A78E7001D301A /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
 		ADA425FE270A880B001D301A /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		ADA42602270AA405001D301A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				ADA425FA270A77D2001D301A /* UserListViewModel.swift */,
 				ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */,
+				ADA42602270AA405001D301A /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				ADA42601270A8EBA001D301A /* UserDetailViewModel.swift in Sources */,
 				ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */,
 				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
+				ADA42603270AA405001D301A /* ProfileViewModel.swift in Sources */,
 				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,
 				ADA425F7270A2676001D301A /* ProfileView.swift in Sources */,

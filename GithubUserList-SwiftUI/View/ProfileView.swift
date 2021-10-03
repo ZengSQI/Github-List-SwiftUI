@@ -9,6 +9,8 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileView: View {
+    @StateObject var viewModel = ProfileViewModel()
+
     var body: some View {
         VStack(alignment: .leading) {
             ZStack(alignment: .bottomLeading) {
@@ -27,19 +29,19 @@ struct ProfileView: View {
             }.frame(height: 350)
             HStack {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Name")
+                    Text(viewModel.name)
                         .font(.title)
-                    Text("login")
+                    Text(viewModel.login)
                         .foregroundColor(.gray)
                         .font(.caption)
                     HStack(spacing: 4) {
                         Image(systemName: "person.2.square.stack.fill")
-                        Text("2")
+                        Text(viewModel.followers)
                             .font(.caption)
                         Text("followers・")
                             .foregroundColor(.gray)
                             .font(.caption)
-                        Text("1")
+                        Text(viewModel.following)
                             .font(.caption)
                         Text("followering・")
                             .foregroundColor(.gray)
@@ -48,14 +50,16 @@ struct ProfileView: View {
                     }
                     HStack(spacing: 4) {
                         Image(systemName: "envelope.fill")
-                        Text("email")
+                        Text(viewModel.email)
                             .font(.caption)
                     }
                 }
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding(.horizontal, 32)
-        }
+        }.onAppear(perform: {
+            viewModel.fetchProfile()
+        })
     }
 }
 
