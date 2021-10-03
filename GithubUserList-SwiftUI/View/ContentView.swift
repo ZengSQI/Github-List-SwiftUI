@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            TabView {
+                UserListView()
+                    .tabItem { Label("User", systemImage: "person.crop.circle.fill") }
+                ProfileView()
+                    .tabItem { Label("Mine", systemImage: "info.circle.fill") }
+            }
+            .navigationBarTitle("GitHub", displayMode: .inline)
+        }
     }
 }
 

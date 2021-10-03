@@ -17,6 +17,8 @@
 		ADA425EE270A07A4001D301A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425ED270A07A4001D301A /* User.swift */; };
 		ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425EF270A07C0001D301A /* UserDetail.swift */; };
 		ADA425F3270A14F4001D301A /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F2270A14F4001D301A /* Github.swift */; };
+		ADA425F5270A2645001D301A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F4270A2645001D301A /* UserListView.swift */; };
+		ADA425F7270A2676001D301A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425F6270A2676001D301A /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		ADA425ED270A07A4001D301A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA425EF270A07C0001D301A /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		ADA425F2270A14F4001D301A /* Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
+		ADA425F4270A2645001D301A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		ADA425F6270A2676001D301A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				ADA425CE2709E1BE001D301A /* ContentView.swift */,
+				ADA425F4270A2645001D301A /* UserListView.swift */,
+				ADA425F6270A2676001D301A /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,9 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */,
+				ADA425F5270A2645001D301A /* UserListView.swift in Sources */,
 				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
 				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
 				ADA425CD2709E1BE001D301A /* GithubUserList_SwiftUIApp.swift in Sources */,
+				ADA425F7270A2676001D301A /* ProfileView.swift in Sources */,
 				ADA425EE270A07A4001D301A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
