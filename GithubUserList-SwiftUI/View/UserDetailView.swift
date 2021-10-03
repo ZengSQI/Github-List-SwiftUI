@@ -9,16 +9,18 @@ import SwiftUI
 import Kingfisher
 
 struct UserDetailView: View {
+    let user: User
+    @StateObject var viewModel = UserDetailViewModel()
 
     var body: some View {
         VStack(spacing: 20) {
             VStack(spacing: 16) {
-                KFImage(URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4"))
+                KFImage(viewModel.avatarURL)
                     .resizable()
                     .frame(width: 172, height: 172, alignment: .center)
                     .clipShape(Circle())
-                Text("Name")
-                Text("Bio")
+                Text(viewModel.name)
+                Text(viewModel.bio)
                     .foregroundColor(.gray)
                     .font(.caption)
             }
@@ -30,19 +32,19 @@ struct UserDetailView: View {
                     Image(systemName: "person.fill")
                         .resizable()
                         .frame(width: 32, height: 32)
-                    Text("login")
+                    Text(user.login)
                 }
                 HStack(spacing: 16) {
                     Image(systemName: "location.fill")
                         .resizable()
                         .frame(width: 32, height: 32)
-                    Text("location")
+                    Text(viewModel.location)
                 }
                 HStack(spacing: 16) {
                     Image(systemName: "link")
                         .resizable()
                         .frame(width: 32, height: 32)
-                    Text("blog")
+                    Text(viewModel.blog)
                 }
             }
             .frame(
@@ -50,12 +52,14 @@ struct UserDetailView: View {
                 maxWidth: 280,
                 alignment: .leading
             )
-        }
+        }.onAppear(perform: {
+            viewModel.fetchDetail(login: user.login)
+        })
     }
 }
 
 struct UserDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        UserDetailView()
+        UserDetailView(user: User(login: "", id: 0, avatarURL: URL(string: "https://avatars.githubusercontent.com/u/10220437?v=4")!, type: ""))
     }
 }

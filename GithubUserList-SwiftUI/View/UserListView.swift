@@ -16,7 +16,7 @@ struct UserListView: View {
         List {
             ForEach (viewModel.users) { user in
                 NavigationLink(
-                    destination: UserDetailView(),
+                    destination: UserDetailView(user: user),
                     label: {
                         UserCell(
                             avatarURL: user.avatarURL,

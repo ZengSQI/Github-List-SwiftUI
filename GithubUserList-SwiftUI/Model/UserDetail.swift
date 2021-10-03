@@ -16,7 +16,7 @@ struct UserDetail: Codable {
     let bio: String?
     let location: String?
     let blog: String
-    let email: String
+    let email: String?
     let followers: Int
     let following: Int
 

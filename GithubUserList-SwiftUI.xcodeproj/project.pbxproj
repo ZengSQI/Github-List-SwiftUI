@@ -22,6 +22,7 @@
 		ADA425FB270A77D2001D301A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FA270A77D2001D301A /* UserListViewModel.swift */; };
 		ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FC270A78E7001D301A /* SubscriptionToken.swift */; };
 		ADA425FF270A880B001D301A /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA425FE270A880B001D301A /* UserDetailView.swift */; };
+		ADA42601270A8EBA001D301A /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		ADA425FA270A77D2001D301A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		ADA425FC270A78E7001D301A /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
 		ADA425FE270A880B001D301A /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA425FA270A77D2001D301A /* UserListViewModel.swift */,
+				ADA42600270A8EBA001D301A /* UserDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				ADA425CF2709E1BE001D301A /* ContentView.swift in Sources */,
 				ADA425FB270A77D2001D301A /* UserListViewModel.swift in Sources */,
 				ADA425F5270A2645001D301A /* UserListView.swift in Sources */,
+				ADA42601270A8EBA001D301A /* UserDetailViewModel.swift in Sources */,
 				ADA425FD270A78E7001D301A /* SubscriptionToken.swift in Sources */,
 				ADA425F0270A07C0001D301A /* UserDetail.swift in Sources */,
 				ADA425F3270A14F4001D301A /* Github.swift in Sources */,
